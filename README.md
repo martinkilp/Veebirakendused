@@ -1,2 +1,3 @@
+Creating subscription design
 Figma disain
-Html 'div' + css 'style'
+Html + css style
