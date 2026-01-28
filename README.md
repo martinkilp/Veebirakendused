@@ -1,2 +1,2 @@
 Figma disain
-Html <div> + css <style>
+Html 'div' + css 'style'

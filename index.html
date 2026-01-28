@@ -22,9 +22,39 @@
     .pakett{
         min-width: 320px;
         background: white;
-
+        margin: 15px;
+        border: thick double #006ea1;
+        position: relative;
+        padding: 10px;
 
     }
+
+    .pakett h2{
+        text-align: center;
+    }
+
+    .pakett .silt{
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #00aaaa;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+    .btn {
+        display: block;
+        text-align: center;
+        background: blue;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background: rgb(59, 29, 59);
+    }
+
 
     body{
         background: rgb(189, 189, 189);
@@ -42,13 +72,25 @@
 
             <div class="paketid">
                 <div class="pakett">
-                    <span class="silt">kõige soodsam</span>
+                    <span class="silt">Tasuta</span>
                     <h2>Starter</h2>
                     <a class="btn" href>Telli</a>
                 </div>
                 
                 <div class="pakett premium">
-                    <span class="silt">kõige populaarsem</span>
+                    <span class="silt">Kõige Soodsam</span>
+                    <h2>Premium</h2>
+                    <a class="btn" href>Telli</a>
+                </div>
+                
+                <div class="pakett corporate">
+                    <span class="silt">Kõige Populaarsem</span>
+                    <h2>Premium</h2>
+                    <a class="btn" href>Telli</a>
+                </div>
+
+                <div class="pakett corporate">
+                    <span class="silt">Täis Pakett</span>
                     <h2>Premium</h2>
                     <a class="btn" href>Telli</a>
                 </div>
