@@ -23,7 +23,8 @@
         min-width: 320px;
         background: white;
         margin: 15px;
-        border: thick double #006ea1;
+        border-radius: 10px;
+        border: 2px solid #1235fa;
         position: relative;
         padding: 10px;
 
@@ -34,11 +35,13 @@
     }
 
     .pakett .silt{
+        min-width: 150px;
         background: white;
         padding: 10px;
         border-radius: 10px;
-        border: 2px solid #00aaaa;
+        border: 1px solid #1235fa;
         position: absolute;
+        text-align: center;
         top: -20px;
         left: 50%;
         transform: translateX(-50%);
@@ -46,19 +49,20 @@
     .btn {
         display: block;
         text-align: center;
-        background: blue;
+        background: rgb(0, 0, 255);
         color: white;
         padding: 10px;
+        border-radius: 10px;
         text-decoration: none;
     }
     .btn:hover {
-        background: rgb(59, 29, 59);
+        background: rgb(51, 6, 136);
     }
 
 
     body{
         background: rgb(189, 189, 189);
-        color: rgb(21, 1, 199);
+        color: #1235fa;
     }
 
 </style>
@@ -73,25 +77,25 @@
             <div class="paketid">
                 <div class="pakett">
                     <span class="silt">Tasuta</span>
-                    <h2>Starter</h2>
+                    <h2>Free</h2>
                     <a class="btn" href>Telli</a>
                 </div>
                 
                 <div class="pakett premium">
                     <span class="silt">Kõige Soodsam</span>
-                    <h2>Premium</h2>
+                    <h2>STARTER</h2>
                     <a class="btn" href>Telli</a>
                 </div>
                 
                 <div class="pakett corporate">
                     <span class="silt">Kõige Populaarsem</span>
-                    <h2>Premium</h2>
+                    <h2>BUSINESS</h2>
                     <a class="btn" href>Telli</a>
                 </div>
 
                 <div class="pakett corporate">
                     <span class="silt">Täis Pakett</span>
-                    <h2>Premium</h2>
+                    <h2>CORPORATE</h2>
                     <a class="btn" href>Telli</a>
                 </div>
 
