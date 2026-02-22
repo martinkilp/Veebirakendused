@@ -17,3 +17,66 @@ body {
     
 }
 
+.navbar
+{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.navbar-conteiner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-logo
+{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-conteiner .navbar-menu
+{
+    display: flex;
+    text-align: center;
+    gap: 1,5rem;
+    list-style: none;
+
+}
+
+.navbar-conteiner .navbar-menu li a
+{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+
+.navbar-conteiner .navbar-menu li a:hover
+{
+    color: #162530;
+    background: rgba(red, green, blue, alpha);
+    border: 2px solid #ffff;
+}
+
