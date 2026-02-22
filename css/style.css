@@ -76,7 +76,25 @@ display: flex;
 .navbar-conteiner .navbar-menu li a:hover
 {
     color: #162530;
-    background: rgba(red, green, blue, alpha);
-    border: 2px solid #ffff;
+    background: #DD8943;
+    border: 1px solid #ffff;
 }
 
+.navbar-toggle
+{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #ffff;
+    transition: all 0.3s ease-in-out;
+}
