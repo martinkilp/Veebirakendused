@@ -68,7 +68,8 @@ body {
     white-space: nowrap;
 }
 
-.navbar-conteiner .navbar-menu li a:hover {
+.navbar-conteiner .navbar-menu li a:hover,
+.navbar-conteiner .navbar-menu li a.active {
     color: #162530;
     background: #DD8943;
     border: 1px solid #ffff;
@@ -132,6 +133,22 @@ body {
 
     .navbar-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar-conteiner {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar-conteiner .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
     }
 
 }
