@@ -99,6 +99,7 @@ body {
     }
 
     .navbar-conteiner .navbar-menu {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem !important;
@@ -112,8 +113,7 @@ body {
         backdrop-filter: blur(10px);
     }
 
-    .navbar-conteiner .navbar-menu.active
-    {
+    .navbar-conteiner .navbar-menu.active {
         display: flex;
     }
 
@@ -122,18 +122,15 @@ body {
         z-index: 999;
     }
 
-    .navbar-toggle.active .bar:nth-child(2)
-    {
+    .navbar-toggle.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .navbar-toggle.active .bar:nth-child(1)
-    {
+    .navbar-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .navbar-toggle.active .bar:nth-child(3)
-    {
+    .navbar-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
