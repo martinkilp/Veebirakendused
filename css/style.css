@@ -14,12 +14,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
-.navbar
-{
-display: flex;
+.navbar {
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
@@ -32,8 +31,7 @@ display: flex;
     z-index: 999;
 }
 
-.navbar-conteiner
-{
+.navbar-conteiner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,8 +40,7 @@ display: flex;
     max-width: 1600px;
 }
 
-.navbar-logo
-{
+.navbar-logo {
     font-size: 2rem;
     font-weight: 600;
     color: #ffff;
@@ -51,17 +48,15 @@ display: flex;
     cursor: pointer;
 }
 
-.navbar-conteiner .navbar-menu
-{
+.navbar-conteiner .navbar-menu {
     display: flex;
     text-align: center;
-    gap: 1,5rem;
+    gap: 1, 5rem;
     list-style: none;
 
 }
 
-.navbar-conteiner .navbar-menu li a
-{
+.navbar-conteiner .navbar-menu li a {
     text-decoration: none;
     color: #ffff;
     font-size: 1.3rem;
@@ -73,15 +68,13 @@ display: flex;
     white-space: nowrap;
 }
 
-.navbar-conteiner .navbar-menu li a:hover
-{
+.navbar-conteiner .navbar-menu li a:hover {
     color: #162530;
     background: #DD8943;
     border: 1px solid #ffff;
 }
 
-.navbar-toggle
-{
+.navbar-toggle {
     display: none;
     background: transparent;
     padding: 10px;
@@ -89,12 +82,59 @@ display: flex;
     cursor: pointer;
 }
 
-.bar
-{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     background: #ffff;
     transition: all 0.3s ease-in-out;
+}
+
+
+/* Responsive Style */
+@media (max-width: 800px) {
+    .navbar {
+        backdrop-filter: none;
+    }
+
+    .navbar-conteiner .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-conteiner .navbar-menu.active
+    {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
