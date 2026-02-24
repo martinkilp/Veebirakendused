@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paketid</title>
+    <title>Figma</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Michroma"
         rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar"></div>
+    </header>
 
     <style>
-
         body {
             background: rgb(212, 212, 212);
             color: #1235fa;
@@ -36,7 +46,7 @@
             border-radius: 10px;
             position: relative;
             padding: 10px;
-            
+
             --accent: #1235fa;
             --accent-hover: #330688;
             --text: #111;
@@ -71,16 +81,39 @@
             font-size: 20px;
         }
 
-        .pakett .silt { border-color: var(--accent); }
-        .pakett .btn { background: var(--accent); }
-        .pakett .btn:hover { background: var(--accent-hover); }
+        .pakett .silt {
+            border-color: var(--accent);
+        }
+
+        .pakett .btn {
+            background: var(--accent);
+        }
+
+        .pakett .btn:hover {
+            background: var(--accent-hover);
+        }
 
 
         /* pakettide teemad/värvid */
-        .pakett.free { --accent:#9b9b9b; --accent-hover:#464646; }
-        .pakett.starter { --accent:#05ad4b; --accent-hover:#00441c; }
-        .pakett.business { --accent:#0022e6; --accent-hover:#000f61; }
-        .pakett.corporate { --accent:#b700cf; --accent-hover:#3d0046; }
+        .pakett.free {
+            --accent: #9b9b9b;
+            --accent-hover: #464646;
+        }
+
+        .pakett.starter {
+            --accent: #05ad4b;
+            --accent-hover: #00441c;
+        }
+
+        .pakett.business {
+            --accent: #0022e6;
+            --accent-hover: #000f61;
+        }
+
+        .pakett.corporate {
+            --accent: #b700cf;
+            --accent-hover: #3d0046;
+        }
 
 
         .pakett h2 {
@@ -143,12 +176,8 @@
             content: "✖";
             color: #e72813;
         }
-
     </style>
 
-</head>
-
-<body>
     <div class="container">
         <h1>Paketid</h1>
         <h1>Martin Kilp</h1>
@@ -241,6 +270,9 @@
             </div>
 
         </div>
+
+        <script type="module" src="../js/main.js"></script>
+
 </body>
 
 </html>
