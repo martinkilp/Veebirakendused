@@ -20,5 +20,5 @@ jobs:
           ssh-keyscan -H ${{ secrets.HOST_SERVER_IP }} >> ~/.ssh/known_hosts
       - name: Copy files to server
         run: |
-          rsync -vrm  ./* ${{ secrets.SSH_LOGIN_CREDS }}:/data01/virt145947/domeenid/www.martinkilp.eu/actions
+          rsync -vrm  ./* ${{ secrets.SSH_LOGIN_CREDS }}:/data01/virt145947/domeenid/www.martinkilp.eu/htdocs
           
